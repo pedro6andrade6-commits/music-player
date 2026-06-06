@@ -887,14 +887,14 @@ const STORAGE_PREFIX = "music-player-playlist-";
 const MAX_SONGS_IN_VIEW = 2;
 
 const ICONS = {
-  export: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>',
-  importFile: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 9l5-5 5 5"/><path d="M12 4v12"/></svg>',
-  sync: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 16h5"/><path d="M21 8h-5"/></svg>',
+  export: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
+  importFile: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>',
+  sync: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 12a9 9 0 0 1 15-6.7l3 2.7"/><path d="M3 16h5"/><path d="M16 21h5"/></svg>',
   synced: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/><path d="M16 6h4v4"/></svg>',
   fullscreen: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>',
   close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>',
   uploadMusic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>',
-  shuffle: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="m4 4 5 5"/></svg>',
+  shuffle: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="M15 8 4 19"/></svg>',
   previous: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 20-10-8 10-8v16z"/><path d="M5 19V5"/></svg>',
   play: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 3 14 9-14 9V3z"/></svg>',
   pause: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h3v16H8z"/><path d="M13 4h3v16h-3z"/></svg>',
@@ -903,10 +903,10 @@ const ICONS = {
   grid: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>',
   selectAll: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>',
   clearSelection: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8l8 8"/><path d="M16 8l-8 8"/></svg>',
-  edit: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>',
+  edit: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19H4v-3L16.5 3.5z"/></svg>',
   deleteIcon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>',
   move: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20"/><path d="m8 6 4-4 4 4"/><path d="m8 18 4 4 4-4"/></svg>',
-  save: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg>'
+  save: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>',
 };
 
 function setButtonIcon(element, iconName, label) {
@@ -966,6 +966,126 @@ function safeFileName(value) {
   return String(value || "Untitled").replace(/[<>:"/\\|?*\x00-\x1F]/g, "_").replace(/\s+/g, " ").trim().slice(0, 90) || "Untitled";
 }
 
+// BROWSER STORAGE FUNCTIONS
+function savePlaylistToStorage(name) {
+  if (!name || !trackList.length) {
+    alert("Cannot save empty playlist");
+    return;
+  }
+  const key = STORAGE_PREFIX + name;
+  const playlistData = {
+    name,
+    tracks: trackList.map(t => ({
+      id: t.id,
+      name: t.name,
+      artist: t.artist,
+      fileName: t.fileName,
+      mime: t.mime,
+    })),
+    savedAt: new Date().toISOString(),
+  };
+  try {
+    localStorage.setItem(key, JSON.stringify(playlistData));
+    updateStorageList();
+    alert(`Playlist "${name}" saved successfully!`);
+  } catch (err) {
+    alert("Failed to save playlist: " + err.message);
+  }
+}
+
+function loadPlaylistFromStorage(name) {
+  const key = STORAGE_PREFIX + name;
+  try {
+    const data = JSON.parse(localStorage.getItem(key));
+    if (!data || !data.tracks) return;
+    
+    trackList = data.tracks.map(t => createTrack({
+      id: t.id,
+      name: t.name,
+      artist: t.artist,
+      fileName: t.fileName,
+      mime: t.mime,
+    }));
+    
+    currentTrackIndex = -1;
+    renderPlaylist();
+    resetPlayerUi(`Loaded: ${name}`);
+    alert(`Playlist "${name}" loaded successfully!`);
+  } catch (err) {
+    alert("Failed to load playlist: " + err.message);
+  }
+}
+
+function deletePlaylistFromStorage(name) {
+  const key = STORAGE_PREFIX + name;
+  localStorage.removeItem(key);
+  updateStorageList();
+}
+
+function updateStorageList() {
+  storageList.innerHTML = "";
+  const keys = Object.keys(localStorage);
+  const playlists = keys.filter(k => k.startsWith(STORAGE_PREFIX));
+  
+  if (playlists.length === 0) {
+    storageList.innerHTML = '<div class="storage-item"><span class="storage-item-name">No saved playlists</span></div>';
+    return;
+  }
+  
+  playlists.forEach(key => {
+    const name = key.replace(STORAGE_PREFIX, "");
+    try {
+      const data = JSON.parse(localStorage.getItem(key));
+      const date = new Date(data.savedAt).toLocaleDateString();
+      const trackCount = data.tracks?.length || 0;
+      
+      const item = document.createElement("div");
+      item.className = "storage-item";
+      item.innerHTML = `
+        <span class="storage-item-name">${escapeHtml(name)}</span>
+        <div class="storage-item-info">
+          <span>${trackCount} tracks</span>
+          <span class="storage-item-date">${date}</span>
+        </div>
+      `;
+      
+      item.addEventListener("click", () => loadPlaylistFromStorage(name));
+      const deleteBtn = document.createElement("button");
+      deleteBtn.className = "icon-btn delete";
+      deleteBtn.innerHTML = ICONS.deleteIcon;
+      deleteBtn.style.width = "24px";
+      deleteBtn.style.height = "24px";
+      deleteBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (confirm(`Delete playlist "${name}"?`)) {
+          deletePlaylistFromStorage(name);
+        }
+      });
+      
+      item.appendChild(deleteBtn);
+      storageList.appendChild(item);
+    } catch (err) {
+      console.error("Error reading playlist:", err);
+    }
+  });
+}
+
+function clearAllStorage() {
+  const keys = Object.keys(localStorage);
+  const playlists = keys.filter(k => k.startsWith(STORAGE_PREFIX));
+  
+  if (playlists.length === 0) {
+    alert("No saved playlists to clear");
+    return;
+  }
+  
+  if (confirm(`Delete all ${playlists.length} saved playlist(s)?`)) {
+    playlists.forEach(key => localStorage.removeItem(key));
+    updateStorageList();
+    alert("All playlists cleared!");
+  }
+}
+
 function setPlayingUi(isPlaying) {
   playBtn.hidden = isPlaying;
   pauseBtn.hidden = !isPlaying;
@@ -998,569 +1118,371 @@ function updateDefaultCoverColors() {
 }
 
 function updateBackground() {
-  document.documentElement.style.setProperty("--bg-gradient", `linear-gradient(135deg, ${color1.value}, ${color2.value})`);
-  document.documentElement.style.setProperty("--primary", color1.value);
-  document.documentElement.style.setProperty("--secondary", color2.value);
-  updateDefaultCoverColors();
-  buildPlaylist();
-}
-
-function syncViewButtons() {
-  listViewBtn.classList.toggle("active-view", currentLayout === "list-layout");
-  gridViewBtn.classList.toggle("active-view", currentLayout === "grid-layout");
-}
-
-function getSelectedIndexes() {
-  return trackList.map((track, index) => selectedTrackIds.has(track.id) ? index : -1).filter(index => index !== -1);
-}
-
-function updateSelectionUi() {
-  selectedTrackIds = new Set([...selectedTrackIds].filter(id => trackList.some(track => track.id === id)));
-  const selectedCount = selectedTrackIds.size;
-  selectedActions.hidden = selectedCount === 0;
-  selectionCount.textContent = selectedCount > 0 ? `${selectedCount} selected` : "";
-  selectAllBtn.disabled = trackList.length === 0;
-  if (selectedCount === trackList.length && trackList.length > 0) {
-    setButtonIcon(selectAllBtn, "clearSelection", "Clear selection");
+  document.documentElement.style.setProperty('--bg-gradient', `linear-gradient(135deg, ${color1.value}, ${color2.value}, #24243e)`);
+  if (syncNameWithBackground) {
+    defaultCover = createDefaultCover(true, color1.value, color2.value);
+    trackList.forEach(track => {
+      if (track.usesDefaultCover) {
+        track.cover = defaultCover;
+      }
+    });
+    if (currentTrackIndex >= 0) {
+      const track = trackList[currentTrackIndex];
+      if (track?.usesDefaultCover) albumArt.src = track.cover;
+    } else {
+      albumArt.src = defaultCover;
+    }
+    renderPlaylist();
   } else {
-    setButtonIcon(selectAllBtn, "selectAll", "Select all musics");
+    updateDefaultCoverColors();
   }
-}
-
-function resetShuffleMemory(includeCurrent = true) {
-  shufflePlayed = new Set();
-  if (includeCurrent && currentTrackIndex >= 0 && currentTrackIndex < trackList.length) shufflePlayed.add(currentTrackIndex);
-}
-
-function markPlayed(index) {
-  if (isShuffle && index >= 0 && index < trackList.length) shufflePlayed.add(index);
-}
-
-function getNextShuffleIndex() {
-  if (trackList.length === 0) return -1;
-  if (currentTrackIndex >= 0) shufflePlayed.add(currentTrackIndex);
-  let candidates = trackList.map((_, index) => index).filter(index => !shufflePlayed.has(index) && index !== currentTrackIndex);
-  if (candidates.length === 0) {
-    resetShuffleMemory(false);
-    if (trackList.length > 1 && currentTrackIndex >= 0) shufflePlayed.add(currentTrackIndex);
-    candidates = trackList.map((_, index) => index).filter(index => !shufflePlayed.has(index));
-  }
-  if (candidates.length === 0) return currentTrackIndex >= 0 ? currentTrackIndex : 0;
-  const nextIndex = candidates[Math.floor(Math.random() * candidates.length)];
-  shufflePlayed.add(nextIndex);
-  return nextIndex;
-}
-
-function reorderTrack(fromId, toId) {
-  if (!fromId || !toId || fromId === toId) return;
-  const activeId = trackList[currentTrackIndex]?.id || null;
-  const fromIndex = trackList.findIndex(track => track.id === fromId);
-  const toIndex = trackList.findIndex(track => track.id === toId);
-  if (fromIndex === -1 || toIndex === -1) return;
-  const [movedTrack] = trackList.splice(fromIndex, 1);
-  trackList.splice(toIndex, 0, movedTrack);
-  currentTrackIndex = activeId ? trackList.findIndex(track => track.id === activeId) : -1;
-  resetShuffleMemory();
-  buildPlaylist();
-}
-
-function buildPlaylist() {
-  playlistContainer.innerHTML = "";
-  playlistContainer.className = `ul-playlist ${currentLayout}`;
-  if (trackList.length === 0) {
-    selectedTrackIds.clear();
-    playlistContainer.innerHTML = `<li class="empty-playlist">No songs loaded</li>`;
-    updateSelectionUi();
-    return;
-  }
-
-  const displayLimit = MAX_SONGS_IN_VIEW;
-  let displayed = 0;
-
-  trackList.forEach((track, index) => {
-    if (displayed >= displayLimit && index !== currentTrackIndex) return;
-    displayed++;
-
-    const li = document.createElement("li");
-    li.className = `track-item ${index === currentTrackIndex ? "active" : ""}`;
-    li.draggable = true;
-    li.dataset.id = track.id;
-    li.innerHTML = `
-      <button class="drag-handle" title="Drag to move" aria-label="Drag to move">${ICONS.move}<span class="sr-only">Drag to move</span></button>
-      <img src="${track.cover || defaultCover}" class="track-grid-thumb" alt="">
-      <input type="checkbox" class="track-checkbox" data-id="${track.id}" ${selectedTrackIds.has(track.id) ? "checked" : ""}>
-      <div class="track-info">
-        <span class="track-name">${escapeHtml(track.name)}</span>
-        <span class="track-artist">${escapeHtml(track.artist || "Unknown Artist")}</span>
-      </div>
-      <div class="track-actions">
-        <button class="icon-btn edit-track" title="Edit track" aria-label="Edit track">${ICONS.edit}<span class="sr-only">Edit track</span></button>
-        <button class="icon-btn delete remove-btn" title="Remove" aria-label="Remove">${ICONS.deleteIcon}<span class="sr-only">Remove</span></button>
-      </div>
-    `;
-
-    li.addEventListener("dragstart", event => {
-      draggedTrackId = track.id;
-      li.classList.add("dragging");
-      event.dataTransfer.effectAllowed = "move";
-      event.dataTransfer.setData("text/plain", track.id);
-    });
-    li.addEventListener("dragover", event => {
-      event.preventDefault();
-      li.classList.add("drag-over");
-    });
-    li.addEventListener("dragleave", () => li.classList.remove("drag-over"));
-    li.addEventListener("drop", event => {
-      event.preventDefault();
-      li.classList.remove("drag-over");
-      reorderTrack(event.dataTransfer.getData("text/plain") || draggedTrackId, track.id);
-    });
-    li.addEventListener("dragend", () => {
-      draggedTrackId = null;
-      document.querySelectorAll(".track-item").forEach(item => item.classList.remove("dragging", "drag-over"));
-    });
-
-    li.querySelector(".track-info").addEventListener("click", () => changeTrack(index));
-    li.querySelector(".track-checkbox").addEventListener("change", event => {
-      if (event.target.checked) selectedTrackIds.add(track.id);
-      else selectedTrackIds.delete(track.id);
-      updateSelectionUi();
-    });
-    li.querySelector(".edit-track").addEventListener("click", event => {
-      event.stopPropagation();
-      openEditModal([index]);
-    });
-    li.querySelector(".remove-btn").addEventListener("click", event => {
-      event.stopPropagation();
-      removeTrack(index);
-    });
-    playlistContainer.appendChild(li);
-  });
-
-  if (trackList.length > displayLimit) {
-    const remaining = trackList.length - displayLimit;
-    const emptyLi = document.createElement("li");
-    emptyLi.className = "empty-playlist";
-    emptyLi.textContent = `+${remaining} more songs (scroll or enter fullscreen to see all)`;
-    playlistContainer.appendChild(emptyLi);
-  }
-
-  updateSelectionUi();
-}
-
-function openEditModal(indexes) {
-  editingIndexes = indexes;
-  if (indexes.length === 1) {
-    document.getElementById("modal-title").innerText = "Edit Song";
-    editName.value = trackList[indexes[0]].name;
-    editArtist.value = trackList[indexes[0]].artist || "";
-    editName.disabled = false;
-    editArtist.disabled = false;
-  } else {
-    document.getElementById("modal-title").innerText = `Edit ${indexes.length} Songs`;
-    editName.value = "[Multiple Songs]";
-    editArtist.value = "[Multiple Artists]";
-    editName.disabled = true;
-    editArtist.disabled = true;
-  }
-  editCover.value = "";
-  editModal.style.display = "flex";
-}
-
-function closeEditModal() {
-  editModal.style.display = "none";
-}
-
-function removeTrackData(index) {
-  if (index < 0 || index >= trackList.length) return;
-  const activeId = trackList[currentTrackIndex]?.id || null;
-  const removedTrack = trackList[index];
-  selectedTrackIds.delete(removedTrack.id);
-  trackList.splice(index, 1);
-  if (removedTrack.id === activeId) resetPlayerUi();
-  else currentTrackIndex = activeId ? trackList.findIndex(track => track.id === activeId) : -1;
-  resetShuffleMemory();
-  updateSelectionUi();
-}
-
-function removeTrack(index) {
-  removeTrackData(index);
-  if (currentTrackIndex === -1 && trackList.length > 0) loadTrack(0);
-  buildPlaylist();
-}
-
-function loadTrack(index) {
-  if (index < 0 || index >= trackList.length) return;
-  currentTrackIndex = index;
-  const track = trackList[index];
-  audio.src = track.src || "";
-  document.getElementById("current-title").innerText = track.name || "Untitled";
-  document.getElementById("current-artist").innerText = track.artist || "Unknown Artist";
-  
-  let coverToUse = track.cover;
-  if (track.usesDefaultCover && syncNameWithBackground && track.name) {
-    const generatedColor = generateColorFromName(track.name);
-    coverToUse = createDefaultCover(true, generatedColor, generatedColor, track.name);
-  }
-  albumArt.src = coverToUse || defaultCover;
-  
-  progressBar.value = 0;
-  currentTimeTxt.innerText = "0:00";
-  durationTimeTxt.innerText = "0:00";
-  const speed = parseFloat(speedInput.value);
-  audio.playbackRate = !Number.isNaN(speed) && speed > 0 ? speed : 1;
-  markPlayed(index);
-  buildPlaylist();
-}
-
-function changeTrack(index) {
-  loadTrack(index);
-  if (!audio.src) return;
-  audio.play().then(() => setPlayingUi(true)).catch(() => setPlayingUi(false));
-}
-
-function nextTrack() {
-  if (trackList.length === 0) return;
-  const nextIndex = isShuffle ? getNextShuffleIndex() : currentTrackIndex + 1 >= trackList.length ? 0 : currentTrackIndex + 1;
-  changeTrack(nextIndex);
-}
-
-function prevTrack() {
-  if (trackList.length === 0) return;
-  const prevIndex = currentTrackIndex - 1 < 0 ? trackList.length - 1 : currentTrackIndex - 1;
-  changeTrack(prevIndex);
 }
 
 function formatTime(seconds) {
-  if (Number.isNaN(seconds) || !Number.isFinite(seconds)) return "0:00";
-  const min = Math.floor(seconds / 60);
-  const sec = Math.floor(seconds % 60);
-  return `${min}:${sec < 10 ? "0" : ""}${sec}`;
+  if (!seconds || seconds < 0) return "0:00";
+  const hrs = Math.floor(seconds / 3600);
+  const mins = Math.floor((seconds % 3600) / 60);
+  const secs = Math.floor(seconds % 60);
+  return hrs > 0 ? `${hrs}:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}` : `${mins}:${String(secs).padStart(2, '0')}`;
 }
 
-function downloadBlob(blob, fileName) {
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = fileName;
-  a.click();
-  URL.revokeObjectURL(a.href);
-}
-
-function refreshStorageList() {
-  storageList.innerHTML = "";
-  const allPlaylists = [];
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key.startsWith(STORAGE_PREFIX)) {
-      const stored = JSON.parse(localStorage.getItem(key));
-      allPlaylists.push({
-        key: key,
-        name: stored.name || "Unnamed",
-        timestamp: stored.timestamp || 0,
-        songCount: stored.tracks?.length || 0
-      });
-    }
+function setCurrentTrack(index) {
+  if (index < 0 || index >= trackList.length) return;
+  currentTrackIndex = index;
+  const track = trackList[index];
+  document.getElementById("current-title").innerText = track.name;
+  document.getElementById("current-artist").innerText = track.artist;
+  albumArt.src = track.cover;
+  if (track.src) {
+    audio.src = track.src;
+    audio.load();
   }
+  renderPlaylist();
+}
 
-  if (allPlaylists.length === 0) {
-    storageList.innerHTML = '<div style="padding: 12px; text-align: center; color: var(--muted); font-size: 12px;">No saved playlists</div>';
+function playTrack() {
+  if (currentTrackIndex < 0 || !trackList.length) return;
+  audio.play().catch(err => console.error("Play failed:", err));
+  setPlayingUi(true);
+}
+
+function pauseTrack() {
+  audio.pause();
+  setPlayingUi(false);
+}
+
+function renderPlaylist() {
+  playlistContainer.innerHTML = "";
+  if (!trackList.length) {
+    playlistContainer.innerHTML = '<li class="empty-playlist">No tracks in playlist</li>';
     return;
   }
 
-  allPlaylists.sort((a, b) => b.timestamp - a.timestamp);
-  allPlaylists.forEach(p => {
-    const item = document.createElement("div");
-    item.className = "storage-item";
-    const date = new Date(p.timestamp).toLocaleDateString();
-    item.innerHTML = `
-      <span class="storage-item-name">${escapeHtml(p.name)}</span>
-      <div class="storage-item-info">
-        <span>${p.songCount} songs</span>
-        <span class="storage-item-date">${date}</span>
-      </div>
-    `;
-    item.style.cursor = "pointer";
-    item.addEventListener("click", () => loadFromStorage(p.key));
-    storageList.appendChild(item);
+  trackList.forEach((track, index) => {
+    const li = document.createElement("li");
+    li.className = "track-item";
+    if (index === currentTrackIndex) li.classList.add("active");
+    li.dataset.trackId = track.id;
+
+    const dragHandle = document.createElement("div");
+    dragHandle.className = "drag-handle";
+    dragHandle.innerHTML = ICONS.move;
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "track-checkbox";
+    checkbox.checked = selectedTrackIds.has(track.id);
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) selectedTrackIds.add(track.id);
+      else selectedTrackIds.delete(track.id);
+      updateSelectionUI();
+    });
+
+    if (currentLayout === "grid-layout") {
+      const thumb = document.createElement("img");
+      thumb.src = track.cover;
+      thumb.className = "track-grid-thumb";
+      li.appendChild(dragHandle);
+      li.appendChild(checkbox);
+      li.appendChild(thumb);
+    }
+
+    const trackInfo = document.createElement("div");
+    trackInfo.className = "track-info";
+    trackInfo.innerHTML = `<span class="track-name">${escapeHtml(track.name)}</span><span class="track-artist">${escapeHtml(track.artist)}</span>`;
+    trackInfo.addEventListener("click", () => setCurrentTrack(index));
+
+    const actions = document.createElement("div");
+    actions.className = "track-actions";
+
+    if (currentLayout === "list-layout") {
+      actions.appendChild(dragHandle);
+      actions.appendChild(checkbox);
+    }
+
+    const editBtn = document.createElement("button");
+    editBtn.className = "icon-btn";
+    editBtn.innerHTML = ICONS.edit;
+    editBtn.title = "Edit track";
+    editBtn.addEventListener("click", () => openEditModal(index));
+    actions.appendChild(editBtn);
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.className = "icon-btn delete";
+    deleteBtn.innerHTML = ICONS.deleteIcon;
+    deleteBtn.title = "Delete track";
+    deleteBtn.addEventListener("click", () => deleteTrack(index));
+    actions.appendChild(deleteBtn);
+
+    li.appendChild(trackInfo);
+    if (currentLayout === "list-layout") li.appendChild(actions);
+    else li.appendChild(actions);
+
+    li.addEventListener("dragstart", () => {
+      draggedTrackId = track.id;
+      li.classList.add("dragging");
+    });
+    li.addEventListener("dragend", () => {
+      li.classList.remove("dragging");
+      draggedTrackId = null;
+    });
+    li.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      li.classList.add("drag-over");
+    });
+    li.addEventListener("dragleave", () => li.classList.remove("drag-over"));
+    li.addEventListener("drop", () => {
+      li.classList.remove("drag-over");
+      if (draggedTrackId && draggedTrackId !== track.id) {
+        const fromIdx = trackList.findIndex(t => t.id === draggedTrackId);
+        const toIdx = index;
+        [trackList[fromIdx], trackList[toIdx]] = [trackList[toIdx], trackList[fromIdx]];
+        renderPlaylist();
+      }
+    });
+
+    li.draggable = true;
+    playlistContainer.appendChild(li);
   });
 }
 
-function saveToStorage() {
-  if (trackList.length === 0) {
-    alert("Playlist is empty!");
-    return;
-  }
-  const playlistName = prompt("Enter a name for this playlist:", `Playlist ${new Date().toLocaleDateString()}`);
-  if (!playlistName) return;
-
-  const data = {
-    version: 1,
-    name: playlistName,
-    timestamp: Date.now(),
-    tracks: trackList.map(track => ({
-      id: track.id,
-      name: track.name,
-      artist: track.artist,
-      cover: track.usesDefaultCover ? "" : track.cover
-    }))
-  };
-  const key = STORAGE_PREFIX + Date.now();
-  localStorage.setItem(key, JSON.stringify(data));
-  alert(`Playlist "${playlistName}" saved!`);
-  refreshStorageList();
-}
-
-function loadFromStorage(key) {
-  const stored = localStorage.getItem(key);
-  if (!stored) {
-    alert("Playlist not found.");
-    refreshStorageList();
-    return;
-  }
-  try {
-    const data = JSON.parse(stored);
-    if (!Array.isArray(data.tracks)) throw new Error("Invalid storage format");
-    trackList = data.tracks.map(track => createTrack({
-      id: track.id,
-      name: track.name || "Untitled",
-      artist: track.artist || "Unknown Artist",
-      cover: track.cover || defaultCover,
-      usesDefaultCover: !track.cover,
-      src: ""
-    }));
-    selectedTrackIds.clear();
-    resetPlayerUi("Loaded from storage. Now select your music files");
-    resetShuffleMemory(false);
-    buildPlaylist();
-    alert(`Loaded "${data.name}". Now select your music files to attach them.`);
-  } catch (e) {
-    alert("Error loading playlist: " + e.message);
+function deleteTrack(index) {
+  if (confirm("Delete this track?")) {
+    if (index === currentTrackIndex) resetPlayerUi();
+    trackList.splice(index, 1);
+    if (currentTrackIndex >= trackList.length) currentTrackIndex = trackList.length - 1;
+    renderPlaylist();
   }
 }
 
-function clearAllStorage() {
-  if (confirm("Delete ALL saved playlists from browser storage?")) {
-    for (let i = localStorage.length - 1; i >= 0; i--) {
-      const key = localStorage.key(i);
-      if (key.startsWith(STORAGE_PREFIX)) localStorage.removeItem(key);
-    }
-    alert("All playlists cleared!");
-    refreshStorageList();
-  }
+function openEditModal(index) {
+  editingIndexes = [index];
+  const track = trackList[index];
+  editName.value = track.name;
+  editArtist.value = track.artist;
+  editModal.style.display = "flex";
 }
 
-color1.addEventListener("input", updateBackground);
-color2.addEventListener("input", updateBackground);
+function updateSelectionUI() {
+  const count = selectedTrackIds.size;
+  selectionCount.textContent = count > 0 ? `${count} selected` : "";
+  selectedActions.hidden = count === 0;
+  renderPlaylist();
+}
 
-speedInput.addEventListener("input", event => {
-  const val = parseFloat(event.target.value);
-  if (!Number.isNaN(val) && val > 0) audio.playbackRate = val;
-});
+// Initialize
+applyStaticButtonIcons();
+updateStorageList();
 
-document.getElementById("btn-fullscreen").addEventListener("click", () => playlistElement.classList.add("fullscreen-mode"));
-document.getElementById("btn-exit-fullscreen").addEventListener("click", () => playlistElement.classList.remove("fullscreen-mode"));
-
-document.getElementById("btn-save-storage").addEventListener("click", saveToStorage);
-document.getElementById("btn-clear-storage").addEventListener("click", clearAllStorage);
-
-document.addEventListener("keydown", event => {
-  if (event.key === "Escape") {
-    playlistElement.classList.remove("fullscreen-mode");
-    closeEditModal();
-  }
-});
-
-listViewBtn.addEventListener("click", () => {
-  currentLayout = "list-layout";
-  syncViewButtons();
-  buildPlaylist();
-});
-
-gridViewBtn.addEventListener("click", () => {
-  currentLayout = "grid-layout";
-  syncViewButtons();
-  buildPlaylist();
-});
-
-volumeSlider.addEventListener("input", event => {
-  audio.volume = Number(event.target.value);
-});
-
+// Event listeners
+playBtn.addEventListener("click", playTrack);
+pauseBtn.addEventListener("click", pauseTrack);
 shuffleBtn.addEventListener("click", () => {
   isShuffle = !isShuffle;
   shuffleBtn.classList.toggle("active", isShuffle);
-  resetShuffleMemory();
+  shufflePlayed.clear();
 });
 
-btnSyncIcon.addEventListener("click", () => {
-  syncNameWithBackground = !syncNameWithBackground;
-  btnSyncIcon.classList.toggle("active", syncNameWithBackground);
-  setButtonIcon(btnSyncIcon, syncNameWithBackground ? "synced" : "sync", syncNameWithBackground ? "Synced with names" : "Sync with Background");
-  if (syncNameWithBackground && currentTrackIndex >= 0) {
-    loadTrack(currentTrackIndex);
+prevBtn.addEventListener("click", () => {
+  if (currentTrackIndex > 0) setCurrentTrack(currentTrackIndex - 1);
+  else if (trackList.length) setCurrentTrack(trackList.length - 1);
+});
+
+nextBtn.addEventListener("click", () => {
+  if (!trackList.length) return;
+  if (isShuffle) {
+    if (shufflePlayed.size === trackList.length) shufflePlayed.clear();
+    let idx;
+    do { idx = Math.floor(Math.random() * trackList.length); }
+    while (shufflePlayed.has(idx));
+    shufflePlayed.add(idx);
+    setCurrentTrack(idx);
   } else {
-    buildPlaylist();
+    setCurrentTrack(currentTrackIndex + 1 >= trackList.length ? 0 : currentTrackIndex + 1);
   }
 });
-
-selectAllBtn.addEventListener("click", () => {
-  selectedTrackIds = selectedTrackIds.size === trackList.length ? new Set() : new Set(trackList.map(track => track.id));
-  buildPlaylist();
-});
-
-document.getElementById("btn-modal-cancel").addEventListener("click", closeEditModal);
-editModal.addEventListener("click", event => {
-  if (event.target === editModal) closeEditModal();
-});
-
-document.getElementById("btn-modal-save").addEventListener("click", () => {
-  const file = editCover.files[0];
-  const saveChanges = coverData => {
-    editingIndexes.forEach(index => {
-      if (!trackList[index]) return;
-      if (editingIndexes.length === 1) {
-        trackList[index].name = editName.value.trim() || "Untitled";
-        trackList[index].artist = editArtist.value.trim() || "Unknown Artist";
-      }
-      if (coverData) {
-        trackList[index].cover = coverData;
-        trackList[index].usesDefaultCover = false;
-      }
-    });
-    if (currentTrackIndex !== -1 && editingIndexes.includes(currentTrackIndex)) loadTrack(currentTrackIndex);
-    buildPlaylist();
-    closeEditModal();
-  };
-
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = event => saveChanges(event.target.result);
-    reader.readAsDataURL(file);
-  } else {
-    saveChanges(null);
-  }
-});
-
-document.getElementById("btn-bulk-edit").addEventListener("click", () => {
-  const indexes = getSelectedIndexes();
-  if (indexes.length > 0) openEditModal(indexes);
-});
-
-document.getElementById("btn-bulk-delete").addEventListener("click", () => {
-  getSelectedIndexes().sort((a, b) => b - a).forEach(removeTrackData);
-  if (currentTrackIndex === -1 && trackList.length > 0) loadTrack(0);
-  buildPlaylist();
-});
-
-btnExport.addEventListener("click", () => {
-  if (trackList.length === 0) {
-    alert("Playlist is empty!");
-    return;
-  }
-  const data = JSON.stringify(trackList.map(track => ({ name: track.name, artist: track.artist, cover: track.usesDefaultCover ? "" : track.cover })));
-  downloadBlob(new Blob([data], { type: "text/plain" }), "mymusic-playlist.txt");
-});
-
-txtUpload.addEventListener("change", event => {
-  const file = event.target.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = readerEvent => {
-    try {
-      const parsed = JSON.parse(readerEvent.target.result);
-      if (!Array.isArray(parsed)) throw new Error("Invalid playlist");
-      trackList = parsed.map(track => createTrack({
-        name: track.name || "Untitled",
-        artist: track.artist || "Unknown Artist",
-        cover: track.cover || defaultCover,
-        usesDefaultCover: !track.cover,
-        src: ""
-      }));
-      selectedTrackIds.clear();
-      resetPlayerUi("Now select your music files");
-      resetShuffleMemory(false);
-      buildPlaylist();
-      alert("Playlist template loaded! Now select your music files.");
-    } catch {
-      alert("Invalid .txt playlist file.");
-    }
-  };
-  reader.readAsText(file);
-  event.target.value = "";
-});
-
-fileUpload.addEventListener("change", event => {
-  const files = Array.from(event.target.files);
-  if (files.length === 0) return;
-  const unmatched = [];
-
-  files.forEach(file => {
-    const fileURL = URL.createObjectURL(file);
-    const cleanName = file.name.replace(/\.[^/.]+$/, "").toLowerCase().trim();
-    const match = trackList.find(track => track.name.toLowerCase().trim() === cleanName);
-    if (match) {
-      match.src = fileURL;
-      match.file = file;
-      match.fileName = file.name;
-      match.mime = file.type;
-    } else {
-      unmatched.push(createTrack({
-        name: file.name.replace(/\.[^/.]+$/, ""),
-        artist: "Unknown Artist",
-        src: fileURL,
-        cover: defaultCover,
-        usesDefaultCover: true,
-        file,
-        fileName: file.name,
-        mime: file.type
-      }));
-    }
-  });
-
-  trackList = [...trackList.filter(track => track.src !== ""), ...unmatched];
-  selectedTrackIds.clear();
-  resetShuffleMemory(false);
-  buildPlaylist();
-  if (trackList.length > 0) loadTrack(0);
-  event.target.value = "";
-});
-
-playBtn.addEventListener("click", () => {
-  if (!audio.src) return;
-  audio.play().then(() => setPlayingUi(true)).catch(() => setPlayingUi(false));
-});
-
-pauseBtn.addEventListener("click", () => {
-  audio.pause();
-  setPlayingUi(false);
-});
-
-nextBtn.addEventListener("click", nextTrack);
-prevBtn.addEventListener("click", prevTrack);
 
 audio.addEventListener("timeupdate", () => {
-  if (audio.duration) {
-    progressBar.value = (audio.currentTime / audio.duration) * 100;
-    currentTimeTxt.innerText = formatTime(audio.currentTime);
-  }
-});
-
-audio.addEventListener("loadedmetadata", () => {
+  const percent = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+  progressBar.value = percent;
+  currentTimeTxt.innerText = formatTime(audio.currentTime);
   durationTimeTxt.innerText = formatTime(audio.duration);
 });
 
-audio.addEventListener("ended", nextTrack);
-audio.addEventListener("error", () => setPlayingUi(false));
+audio.addEventListener("ended", () => nextBtn.click());
 
 progressBar.addEventListener("input", () => {
   if (audio.duration) audio.currentTime = (progressBar.value / 100) * audio.duration;
 });
 
-applyStaticButtonIcons();
-syncViewButtons();
-updateSelectionUi();
-buildPlaylist();
-refreshStorageList();
+volumeSlider.addEventListener("input", () => { audio.volume = volumeSlider.value; });
+
+speedInput.addEventListener("input", () => { audio.playbackRate = speedInput.value; });
+
+color1.addEventListener("change", updateBackground);
+color2.addEventListener("change", updateBackground);
+
+btnSyncIcon.addEventListener("click", () => {
+  syncNameWithBackground = !syncNameWithBackground;
+  applyStaticButtonIcons();
+  btnSyncIcon.classList.toggle("active", syncNameWithBackground);
+  updateBackground();
+});
+
+fileUpload.addEventListener("change", (e) => {
+  Array.from(e.target.files).forEach(file => {
+    const url = URL.createObjectURL(file);
+    const track = createTrack({ name: file.name.replace(/\.[^/.]+$/, ""), src: url, file });
+    trackList.push(track);
+  });
+  renderPlaylist();
+  fileUpload.value = "";
+});
+
+txtUpload.addEventListener("change", (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (evt) => {
+    try {
+      const data = JSON.parse(evt.target.result);
+      if (Array.isArray(data)) {
+        trackList = data.map(t => createTrack(t));
+        renderPlaylist();
+      }
+    } catch (err) {
+      alert("Invalid playlist file");
+    }
+  };
+  reader.readAsText(file);
+  txtUpload.value = "";
+});
+
+btnExport.addEventListener("click", () => {
+  if (!trackList.length) {
+    alert("Playlist is empty");
+    return;
+  }
+  const json = JSON.stringify(trackList, null, 2);
+  const blob = new Blob([json], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `playlist-${Date.now()}.txt`;
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+document.getElementById("btn-save-storage").addEventListener("click", () => {
+  const name = prompt("Enter playlist name:");
+  if (name) savePlaylistToStorage(name);
+});
+
+document.getElementById("btn-clear-storage").addEventListener("click", clearAllStorage);
+
+listViewBtn.addEventListener("click", () => {
+  currentLayout = "list-layout";
+  playlistContainer.className = "ul-playlist list-layout";
+  listViewBtn.classList.add("active-view");
+  gridViewBtn.classList.remove("active-view");
+  renderPlaylist();
+});
+
+gridViewBtn.addEventListener("click", () => {
+  currentLayout = "grid-layout";
+  playlistContainer.className = "ul-playlist grid-layout";
+  gridViewBtn.classList.add("active-view");
+  listViewBtn.classList.remove("active-view");
+  renderPlaylist();
+});
+
+selectAllBtn.addEventListener("click", () => {
+  if (selectedTrackIds.size === trackList.length) {
+    selectedTrackIds.clear();
+  } else {
+    trackList.forEach(t => selectedTrackIds.add(t.id));
+  }
+  updateSelectionUI();
+});
+
+document.getElementById("btn-bulk-edit").addEventListener("click", () => {
+  editingIndexes = trackList
+    .map((t, i) => selectedTrackIds.has(t.id) ? i : -1)
+    .filter(i => i !== -1);
+  if (editingIndexes.length > 0) openEditModal(editingIndexes[0]);
+});
+
+document.getElementById("btn-bulk-delete").addEventListener("click", () => {
+  if (confirm("Delete selected tracks?")) {
+    const indices = Array.from(selectedTrackIds).map(id => trackList.findIndex(t => t.id === id)).sort((a, b) => b - a);
+    indices.forEach(i => trackList.splice(i, 1));
+    selectedTrackIds.clear();
+    updateSelectionUI();
+    renderPlaylist();
+  }
+});
+
+document.getElementById("btn-fullscreen").addEventListener("click", () => {
+  playlistElement.classList.add("fullscreen-mode");
+});
+
+document.getElementById("btn-exit-fullscreen").addEventListener("click", () => {
+  playlistElement.classList.remove("fullscreen-mode");
+});
+
+document.getElementById("btn-modal-cancel").addEventListener("click", () => {
+  editModal.style.display = "none";
+  editingIndexes = [];
+});
+
+document.getElementById("btn-modal-save").addEventListener("click", () => {
+  editingIndexes.forEach(idx => {
+    trackList[idx].name = editName.value || "Untitled";
+    trackList[idx].artist = editArtist.value || "Unknown Artist";
+  });
+  editModal.style.display = "none";
+  editingIndexes = [];
+  renderPlaylist();
+});
+
+editCover.addEventListener("change", (e) => {
+  const file = e.target.files[0];
+  if (file && editingIndexes.length > 0) {
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+      editingIndexes.forEach(idx => {
+        trackList[idx].cover = evt.target.result;
+        trackList[idx].usesDefaultCover = false;
+      });
+      renderPlaylist();
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+editModal.addEventListener("click", (e) => {
+  if (e.target === editModal) editModal.style.display = "none";
+});
 </script>
 </body>
 </html>
